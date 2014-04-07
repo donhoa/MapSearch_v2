@@ -15,8 +15,8 @@
     <string name="viewSearchHistory">View search history</string>
     <string name="searchHistoryTitle">Search history</string>
     <string name="deleteSearchHistory">Delete</string>
-    <string name="shareViaEmail">Share via Email</string>
-    <string name="shareViaSMS">Share via SMS</string>
+    <string name="shareViaEmail">Send by Email</string>
+    <string name="shareViaSMS">Send by SMS</string>
     <string name="emptyFieldsToast">Please fill all fields</string>
     <string name="about">About</string>
     <string name="menu_item_settings">Settings</string>

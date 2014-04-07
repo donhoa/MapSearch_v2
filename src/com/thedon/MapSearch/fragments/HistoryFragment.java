@@ -6,29 +6,35 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import com.thedon.MapSearch.R;
+import com.thedon.MapSearch.SearchHistoryItem;
+import com.thedon.MapSearch.adapters.SearchHistoryListAdapter;
+import database.Schema;
 import database.SearchMapDatabaseAdapter;
+
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
  *
  * @author: dhoang
  */
-public class HistoryFragment extends Fragment
+public class HistoryFragment extends Fragment implements SearchHistoryListAdapter.SearchHistoryListener
 {
     private SearchMapDatabaseAdapter mDatabaseAdapter;
-    private SimpleCursorAdapter mAdapter;
+    private SearchHistoryListAdapter mAdapter;
     private Cursor mDataCursor;
 
     private Activity mActivity;
 
     private ListView mList;
+
+    private SearchHistoryListAdapter.SearchHistoryListener mListener;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -36,6 +42,8 @@ public class HistoryFragment extends Fragment
         super.onCreate(savedInstanceState);
 
         mActivity = getActivity();
+        mListener = this;
+
         mDatabaseAdapter = new SearchMapDatabaseAdapter(mActivity);
         mDatabaseAdapter.open();
 
@@ -55,16 +63,37 @@ public class HistoryFragment extends Fragment
         return view;
     }
 
+    @Override
+    public void onDeleteItem(long aId)
+    {
+        Log.v("Don", "ON DELETE ITEM!!!: " + aId);
+
+        deleteSearchItem(aId);
+    }
+
     private void getFullDataSource()
     {
         //Log.v(TAG, "getFullDataSource()");
 
         mDataCursor = mDatabaseAdapter.getFullSearchHistory();
 
-        String[] columns = mDatabaseAdapter.getColumnMappedNames();
-        int[] to = new int[] { R.id.entry_search_string, R.id.entry_description};
+        ArrayList<SearchHistoryItem> list = new ArrayList<SearchHistoryItem>();
 
-        mAdapter = new SimpleCursorAdapter(mActivity, R.layout.search_history_list_item, mDataCursor, columns, to);
+        if (mDataCursor.moveToFirst())
+        {
+            do
+            {
+                long id = mDataCursor.getLong(mDataCursor.getColumnIndex(Schema.SearchHistory.AUTO_ID_PK));
+                String searchString = mDataCursor.getString(mDataCursor.getColumnIndex(Schema.SearchHistory.SEARCH_STRING));
+                String description = mDataCursor.getString(mDataCursor.getColumnIndex(Schema.SearchHistory.DESCRIPTION));
+                list.add(new SearchHistoryItem(id, searchString, description));
+
+                Log.v("Don", "ID: " + id + " - SEARCH STRING: " + searchString + " - " + description);
+
+            } while(mDataCursor.moveToNext());
+        }
+
+        mAdapter = new SearchHistoryListAdapter(mActivity, list, mListener);
 
         mList.setAdapter(mAdapter);
     }
@@ -76,14 +105,13 @@ public class HistoryFragment extends Fragment
         {
             mDatabaseAdapter.open();
         }
-        mDataCursor = mDatabaseAdapter.getFullSearchHistory();
-        mAdapter.changeCursor(mDataCursor);
-        mList.invalidate();
+
+        getFullDataSource();
     }
 
     private void deleteSearchItem(long aId)
     {
-        if (!mDatabaseAdapter.isDatabaseOpen())
+        if (mDatabaseAdapter.isDatabaseOpen())
         {
             mDatabaseAdapter.deleteSearchHistory(aId);
         }

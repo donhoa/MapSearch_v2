@@ -1,6 +1,6 @@
 package database;
 
-final class Schema
+public final class Schema
 {
     // This class cannot be instantiated
     private Schema() {}
@@ -8,7 +8,7 @@ final class Schema
     /**
      * SearchHistory table. Stores search history information. *
      */
-    static final class SearchHistory
+    public static final class SearchHistory
     {
         static final String TABLE_NAME = "searchHistory";
 
@@ -16,9 +16,9 @@ final class Schema
         private SearchHistory() {}
 
         // Columns
-        static final String AUTO_ID_PK = "_id"; //Primary key
-        static final String SEARCH_STRING = "search_string";
-        static final String DESCRIPTION = "description";
+        public static final String AUTO_ID_PK = "_id"; //Primary key
+        public static final String SEARCH_STRING = "search_string";
+        public static final String DESCRIPTION = "description";
 
 
         static final String CREATE_SQL = "CREATE TABLE " + TABLE_NAME + " ("
