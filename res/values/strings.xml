@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MapSearch</string>
+
+    <!-- Navigation Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Search</item>
+        <item >History</item>
+    </string-array>
+
+    <string name="searchPageTitle">Enter location to search:</string>
+    <string name="addressHint">Enter address</string>
+    <string name="descriptionHint">Enter description</string>
+    <string name="searchButtonText">Search</string>
+    <string name="viewSearchHistory">View search history</string>
+    <string name="searchHistoryTitle">Search history list:</string>
+    <string name="deleteSearchHistory">Delete</string>
+    <string name="shareViaEmail">Share via Email</string>
+    <string name="shareViaSMS">Share via SMS</string>
+    <string name="emptyFieldsToast">Please fill all fields</string>
+    <string name="about">About</string>
+    <string name="menu_item_settings">Settings</string>
+</resources>
