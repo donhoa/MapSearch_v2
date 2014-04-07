@@ -5,13 +5,6 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
 
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/searchHistoryTitle"
-            android:textSize="20dip"
-            android:textStyle="bold"/>
-
     <ListView
             android:layout_height = "fill_parent"
             android:layout_width = "fill_parent"

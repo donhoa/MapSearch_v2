@@ -1,10 +1,13 @@
 package com.thedon.MapSearch.fragments;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SimpleCursorAdapter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +38,9 @@ public class HistoryFragment extends Fragment
         mActivity = getActivity();
         mDatabaseAdapter = new SearchMapDatabaseAdapter(mActivity);
         mDatabaseAdapter.open();
+
+        final ActionBar actionBar = mActivity.getActionBar();
+        actionBar.setTitle(getResources().getString(R.string.searchHistoryTitle));
     }
 
     @Override
@@ -85,5 +91,25 @@ public class HistoryFragment extends Fragment
         refreshSearchHistoryList();
     }
 
+    /*private void shareViaEmail(String aSearchString, String aDescription)
+    {
+        Log.v(TAG, "shareViaEmail(): " + aSearchString);
+        Intent  emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.setType("text/plain");
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, aDescription);
+        emailIntent.putExtra(Intent.EXTRA_TEXT, GOOGLE_MAPS_QUERY_BASE_STRING + aSearchString.replace(" ", "+"));
 
+        startActivity(Intent.createChooser(emailIntent, "Share via:"));
+    }
+
+    private void shareViaSMS(String aSearchString)
+    {
+        Log.v(TAG, "shareViaSMS(): " + aSearchString);
+        Intent smsIntent = new Intent(Intent.ACTION_VIEW);
+        smsIntent.setData(Uri.parse("sms:"));
+        smsIntent.setType("vnd.android-dir/mms-sms");
+        smsIntent.putExtra("sms_body", GOOGLE_MAPS_QUERY_BASE_STRING + aSearchString.replace(" ", "+"));
+
+        startActivity(smsIntent);
+    }*/
 }
