@@ -1,6 +1,5 @@
 package com.thedon.MapSearch.fragments;
 
-import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.AsyncTask;
@@ -19,6 +18,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.thedon.MapSearch.R;
+import database.SearchMapDatabaseAdapter;
 
 import java.io.IOException;
 import java.util.List;
@@ -33,9 +33,12 @@ public class MapSearchFragment extends Fragment
     private FragmentActivity mActivity;
     private Button mSearchButton;
     private EditText mAddressEditText;
+    private EditText mDescriptionEditText;
     private GoogleMap mGoogleMap;
     private LatLng mLatLng;
     private MarkerOptions markerOptions;
+
+    private SearchMapDatabaseAdapter mDatabaseAdapter;
 
 
     @Override
@@ -43,15 +46,14 @@ public class MapSearchFragment extends Fragment
     {
         super.onCreate(savedInstanceState);
 
-
-
+        mActivity = getActivity();
+        mDatabaseAdapter = new SearchMapDatabaseAdapter(mActivity);
+        mDatabaseAdapter.open();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        mActivity = getActivity();
-
         View view = inflater.inflate(R.layout.map_search_fragment, container, false);
 
         SupportMapFragment supportMapFragment = (SupportMapFragment)mActivity.getSupportFragmentManager().findFragmentById(R.id.map);
@@ -59,7 +61,7 @@ public class MapSearchFragment extends Fragment
         mGoogleMap = supportMapFragment.getMap();
 
         mAddressEditText = (EditText)view.findViewById(R.id.addressTextbox);
-
+        mDescriptionEditText = (EditText)view.findViewById(R.id.descriptionTextBox);
 
         mSearchButton = (Button)view.findViewById(R.id.searchButton);
 
@@ -68,8 +70,12 @@ public class MapSearchFragment extends Fragment
             @Override
             public void onClick(View view)
             {
-                String addressSearchString;
+                String addressSearchString, descriptionString;
                 addressSearchString = mAddressEditText.getText().toString();
+                descriptionString = mDescriptionEditText.getText().toString();
+
+                mDatabaseAdapter.addSearchHistory(addressSearchString, descriptionString);
+
                 new GeocoderTask().execute(addressSearchString);
             }
         });
@@ -77,13 +83,11 @@ public class MapSearchFragment extends Fragment
         return view;
     }
 
-    // An AsyncTask class for accessing the GeoCoding Web Service
     private class GeocoderTask extends AsyncTask<String, Void, List<Address>>
     {
 
         @Override
         protected List<Address> doInBackground(String... locationName) {
-            // Creating an instance of Geocoder class
             Geocoder geocoder = new Geocoder(mActivity);
             List<Address> addresses = null;
 
@@ -101,19 +105,16 @@ public class MapSearchFragment extends Fragment
         @Override
         protected void onPostExecute(List<Address> addresses) {
 
-            if(addresses==null || addresses.size()==0)
+            if(addresses == null || addresses.size() == 0)
             {
                 Toast.makeText(mActivity, "No Location found", Toast.LENGTH_SHORT).show();
             }
 
-            Toast.makeText(mActivity, "Found: " + addresses.get(0).getCountryName(), Toast.LENGTH_SHORT).show();
-
             // Clears all the existing markers on the map
             //mGoogleMap.clear();
 
-            for(int i=0;i<addresses.size();i++)
+            for(int i = 0; i<addresses.size(); i++)
             {
-
                 Address address = addresses.get(i);
 
                 mLatLng = new LatLng(address.getLatitude(), address.getLongitude());
@@ -127,7 +128,7 @@ public class MapSearchFragment extends Fragment
                 mGoogleMap.addMarker(markerOptions);
 
                 // Locate the first location
-                if(i==0)
+                if(i == 0)
                 {
                     mGoogleMap.animateCamera(CameraUpdateFactory.newLatLng(mLatLng));
                 }
