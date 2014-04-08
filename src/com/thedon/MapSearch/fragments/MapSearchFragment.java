@@ -119,7 +119,7 @@ public class MapSearchFragment extends Fragment
 
             if(addresses == null || addresses.size() == 0)
             {
-                Toast.makeText(mActivity, "No Location found", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mActivity, getResources().getString(R.string.location_not_found), Toast.LENGTH_SHORT).show();
             }
 
             // Clears all the existing markers on the map
@@ -144,15 +144,18 @@ public class MapSearchFragment extends Fragment
                 if(i == 0)
                 {
                     mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(mLatLng, 15));
+
+                    String addressSearchString = mAddressEditText.getText().toString();
+                    String descriptionString = mDescriptionEditText.getText().toString();
+
+                    if (mLatLng != null)
+                    {
+                        Log.d(TAG, "Address: " + addressSearchString + " - latitude: " + mLatLng.latitude + " - longitude: " + mLatLng.longitude );
+                        mDatabaseAdapter.addSearchHistory(addressSearchString, descriptionString, String.valueOf(mLatLng.latitude), String.valueOf(mLatLng.longitude));
+                    }
                 }
+
             }
-
-            String addressSearchString = mAddressEditText.getText().toString();
-            String descriptionString = mDescriptionEditText.getText().toString();
-
-            Log.d(TAG, "Address: " + addressSearchString + " - latitude: " + mLatLng.latitude + " - longitude: " + mLatLng.longitude );
-
-            mDatabaseAdapter.addSearchHistory(addressSearchString, descriptionString, String.valueOf(mLatLng.latitude), String.valueOf(mLatLng.longitude));
         }
     }
 }

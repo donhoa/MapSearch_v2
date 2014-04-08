@@ -22,4 +22,5 @@
     <string name="menu_item_settings">Paramètres</string>
     <string name="no_sms_app">Aucune application trouvée pour envoyer le SMS</string>
     <string name="empty_list">--- Vide ---</string>
+    <string name="location_not_found">Localisation introuvable</string>
 </resources>
