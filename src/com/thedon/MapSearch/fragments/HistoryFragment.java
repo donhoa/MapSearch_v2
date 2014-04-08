@@ -174,7 +174,7 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_TEXT, aLocationString);
 
-                if (defaultSmsPackageName != null) // Can be null in case that there is no default, then the user would be able to choose any app that supports this intent.
+                if (defaultSmsPackageName != null)
                 {
                     intent.setPackage(defaultSmsPackageName);
                 }

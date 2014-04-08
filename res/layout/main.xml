@@ -4,8 +4,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <!--A DrawerLayout has to have 2 childs, the first is the main content. The second child is the Drawer itself.-->
-
     <!-- The main content view -->
     <FrameLayout
             android:id="@+id/navigation_drawer_frame"

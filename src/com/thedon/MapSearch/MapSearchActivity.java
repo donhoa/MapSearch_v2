@@ -49,8 +49,6 @@ public class MapSearchActivity extends FragmentActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
-        // Pass the event to ActionBarDrawerToggle, if it returns
-        // true, then it has handled the app icon touch event
         if (mDrawerToggle.onOptionsItemSelected(item))
         {
             return true;
@@ -64,7 +62,6 @@ public class MapSearchActivity extends FragmentActivity
     protected void onPostCreate(Bundle savedInstanceState)
     {
         super.onPostCreate(savedInstanceState);
-        // Sync the toggle state after onRestoreInstanceState has occurred.
         mDrawerToggle.syncState();
     }
 
