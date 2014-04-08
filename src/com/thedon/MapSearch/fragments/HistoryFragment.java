@@ -65,6 +65,10 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
 
         mList = (ListView)view.findViewById(R.id.historyList);
 
+        View emptyListView = view.findViewById(R.id.empty);
+
+        mList.setEmptyView(emptyListView);
+
         getFullDataSource();
 
         return view;
