@@ -20,6 +20,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.thedon.MapSearch.R;
+import com.thedon.MapSearch.Utils;
 import database.SearchMapDatabaseAdapter;
 
 import java.io.IOException;
@@ -78,6 +79,12 @@ public class MapSearchFragment extends Fragment
             {
                 String addressSearchString;
                 addressSearchString = mAddressEditText.getText().toString();
+
+                if (Utils.isNullOrEmptyString(addressSearchString))
+                {
+                    Toast.makeText(mActivity, getResources().getString(R.string.emptyFieldsToast), Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 new GeocoderTask().execute(addressSearchString);
             }
