@@ -27,6 +27,8 @@ public class SearchHistoryListAdapter extends BaseAdapter
     public interface SearchHistoryListener
     {
         public void onDeleteItem(long id);
+        public void onShareViaEmail(SearchHistoryItem item);
+        public void onShareViaSMS(SearchHistoryItem item);
     }
 
     public SearchHistoryListAdapter(Context context, ArrayList<SearchHistoryItem> aHistoryArrayList, SearchHistoryListener aListener)
@@ -87,6 +89,24 @@ public class SearchHistoryListAdapter extends BaseAdapter
             public void onClick(View view)
             {
                 mListener.onDeleteItem(currentHistoryItem.getId());
+            }
+        });
+
+        viewHolder.sendEmailButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                mListener.onShareViaEmail(currentHistoryItem);
+            }
+        });
+
+        viewHolder.sendSMSButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                mListener.onShareViaSMS(currentHistoryItem);
             }
         });
 

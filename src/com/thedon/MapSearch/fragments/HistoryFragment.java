@@ -2,8 +2,10 @@ package com.thedon.MapSearch.fragments;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -11,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 import com.thedon.MapSearch.R;
 import com.thedon.MapSearch.SearchHistoryItem;
 import com.thedon.MapSearch.adapters.SearchHistoryListAdapter;
@@ -26,6 +29,8 @@ import java.util.ArrayList;
  */
 public class HistoryFragment extends Fragment implements SearchHistoryListAdapter.SearchHistoryListener
 {
+    private static final String GOOGLE_MAPS_QUERY_BASE_STRING = "http://maps.google.com/maps?q=";
+
     private SearchMapDatabaseAdapter mDatabaseAdapter;
     private SearchHistoryListAdapter mAdapter;
     private Cursor mDataCursor;
@@ -66,9 +71,25 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
     @Override
     public void onDeleteItem(long aId)
     {
-        Log.v("Don", "ON DELETE ITEM!!!: " + aId);
+        Log.v("Don", "onDeleteItem(): " + aId);
 
         deleteSearchItem(aId);
+    }
+
+    @Override
+    public void onShareViaEmail(SearchHistoryItem item)
+    {
+        Log.v("Don", "onShareViaEmail(): " + item.getAddress());
+
+        shareViaEmail(item.getAddress(), GOOGLE_MAPS_QUERY_BASE_STRING + item.getLatitude() + "," + item.getLongitude());
+    }
+
+    @Override
+    public void onShareViaSMS(SearchHistoryItem item)
+    {
+        Log.v("Don", "onShareViaSMS(): " + item.getAddress());
+
+        shareViaSMS(GOOGLE_MAPS_QUERY_BASE_STRING + item.getLatitude() + "," + item.getLongitude());
     }
 
     private void getFullDataSource()
@@ -121,25 +142,30 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
         refreshSearchHistoryList();
     }
 
-    /*private void shareViaEmail(String aSearchString, String aDescription)
+    private void shareViaEmail(String aDescription, String aLocationString)
     {
-        Log.v(TAG, "shareViaEmail(): " + aSearchString);
+        Log.v("Don", "shareViaEmail(): " + aLocationString);
         Intent  emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, aDescription);
-        emailIntent.putExtra(Intent.EXTRA_TEXT, GOOGLE_MAPS_QUERY_BASE_STRING + aSearchString.replace(" ", "+"));
+        emailIntent.putExtra(Intent.EXTRA_TEXT, aLocationString);
 
         startActivity(Intent.createChooser(emailIntent, "Share via:"));
     }
 
-    private void shareViaSMS(String aSearchString)
+    private void shareViaSMS(String aLocationString)
     {
-        Log.v(TAG, "shareViaSMS(): " + aSearchString);
-        Intent smsIntent = new Intent(Intent.ACTION_VIEW);
-        smsIntent.setData(Uri.parse("sms:"));
-        smsIntent.setType("vnd.android-dir/mms-sms");
-        smsIntent.putExtra("sms_body", GOOGLE_MAPS_QUERY_BASE_STRING + aSearchString.replace(" ", "+"));
-
-        startActivity(smsIntent);
-    }*/
+        Log.v("Don", "shareViaSMS(): " + aLocationString);
+        try
+        {
+            Uri smsUri = Uri.parse("smsto:");
+            Intent smsIntent = new Intent(Intent.ACTION_SENDTO, smsUri);
+            smsIntent.putExtra("sms_body", aLocationString);
+            startActivity(smsIntent);
+        }
+        catch (ActivityNotFoundException e)
+        {
+            Toast.makeText(mActivity, getResources().getText(R.string.no_sms_app), Toast.LENGTH_SHORT).show();
+        }
+    }
 }
