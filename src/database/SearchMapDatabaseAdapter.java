@@ -35,9 +35,9 @@ public final class SearchMapDatabaseAdapter
         @Override
         public void onCreate(SQLiteDatabase db)
         {
-            Log.v(TAG, "Creating database...");
+            Log.d(TAG, "Creating database...");
             createTables(db);
-            Log.v(TAG, "Database created.");
+            Log.d(TAG, "Database created.");
         }
 
         @Override
@@ -50,19 +50,19 @@ public final class SearchMapDatabaseAdapter
 
     private static void createTables(SQLiteDatabase aDb)
     {
-        Log.v(TAG, "Creating tables...");
+        Log.d(TAG, "Creating tables...");
 
         aDb.execSQL(Schema.SearchHistory.CREATE_SQL);
 
-        Log.v(TAG, "Tables created.");
+        Log.d(TAG, "Tables created.");
 
     }
 
     private static void dropTables(SQLiteDatabase aDb)
     {
-        Log.v(TAG, "Dropping tables...");
+        Log.d(TAG, "Dropping tables...");
         aDb.execSQL("DROP TABLE IF EXISTS " + Schema.SearchHistory.TABLE_NAME);
-        Log.v(TAG, "Tables dropped.");
+        Log.d(TAG, "Tables dropped.");
     }
 
     // Init
@@ -72,10 +72,10 @@ public final class SearchMapDatabaseAdapter
     {
         synchronized(DB_LOCK)
         {
-            Log.v(TAG, "Flushing database...");
+            Log.d(TAG, "Flushing database...");
             dropTables(mDb);
             createTables(mDb);
-            Log.v(TAG, "Database flushed.");
+            Log.d(TAG, "Database flushed.");
         }
     }
 
@@ -83,9 +83,9 @@ public final class SearchMapDatabaseAdapter
     {
         synchronized(DB_LOCK)
         {
-            Log.v(TAG, "Opening database...");
+            Log.d(TAG, "Opening database...");
             mDb = mDbHelper.getWritableDatabase();
-            Log.v(TAG, "Database opened.");
+            Log.d(TAG, "Database opened.");
         }
     }
 
@@ -93,9 +93,9 @@ public final class SearchMapDatabaseAdapter
     {
         synchronized(DB_LOCK)
         {
-            Log.v(TAG, "Closing database...");
+            Log.d(TAG, "Closing database...");
             mDbHelper.close();
-            Log.v(TAG, "Database closed.");
+            Log.d(TAG, "Database closed.");
         }
     }
 
@@ -114,7 +114,7 @@ public final class SearchMapDatabaseAdapter
 
     public long addSearchHistory(String aSearchString, String aDescription, String aLatitude, String aLongitude)
     {
-        Log.v("Don", "addSearchHistory(" + aSearchString + ", " + aDescription + ")");
+        Log.d("Don", "addSearchHistory(" + aSearchString + ", " + aDescription + ")");
         final ContentValues initialValues = new ContentValues();
 
         initialValues.put(Schema.SearchHistory.SEARCH_STRING, aSearchString);
@@ -129,14 +129,14 @@ public final class SearchMapDatabaseAdapter
 
     public void deleteSearchHistory(long aSearchId)
     {
-        Log.v("Don", "deleteSearchHistory(): " + aSearchId);
+        Log.d(TAG, "deleteSearchHistory(): " + aSearchId);
         mDb.delete(Schema.SearchHistory.TABLE_NAME, Schema.SearchHistory.AUTO_ID_PK + " = ?", new String[] {String.valueOf(aSearchId)});
         mDb.close();
     }
 
     public Cursor getFullSearchHistory()
     {
-        Log.v(TAG, "getFullSearchHistory()");
+        Log.d(TAG, "getFullSearchHistory()");
 
         Cursor data = mDb.rawQuery("SELECT * FROM " + Schema.SearchHistory.TABLE_NAME, null);
 

@@ -73,7 +73,7 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
     @Override
     public void onDeleteItem(long aId)
     {
-        Log.v("Don", "onDeleteItem(): " + aId);
+        Log.d("Don", "onDeleteItem(): " + aId);
 
         deleteSearchItem(aId);
     }
@@ -81,7 +81,7 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
     @Override
     public void onShareViaEmail(SearchHistoryItem item)
     {
-        Log.v("Don", "onShareViaEmail(): " + item.getAddress());
+        Log.d("Don", "onShareViaEmail(): " + item.getAddress());
 
         shareViaEmail(item.getAddress(), GOOGLE_MAPS_QUERY_BASE_STRING + item.getLatitude() + "," + item.getLongitude());
     }
@@ -89,14 +89,14 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
     @Override
     public void onShareViaSMS(SearchHistoryItem item)
     {
-        Log.v("Don", "onShareViaSMS(): " + item.getAddress());
+        Log.d("Don", "onShareViaSMS(): " + item.getAddress());
 
         shareViaSMS(GOOGLE_MAPS_QUERY_BASE_STRING + item.getLatitude() + "," + item.getLongitude());
     }
 
     private void getFullDataSource()
     {
-        //Log.v(TAG, "getFullDataSource()");
+        //Log.d(TAG, "getFullDataSource()");
 
         mDataCursor = mDatabaseAdapter.getFullSearchHistory();
 
@@ -113,7 +113,7 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
                 String longitude = mDataCursor.getString(mDataCursor.getColumnIndex(Schema.SearchHistory.LONGITUDE));
                 list.add(new SearchHistoryItem(id, searchString, description, latitude, longitude));
 
-                Log.v("Don", "ID: " + id + " - SEARCH STRING: " + searchString + " - " + description + " - " + latitude + " - " + longitude);
+                Log.d("Don", "ID: " + id + " - SEARCH STRING: " + searchString + " - " + description + " - " + latitude + " - " + longitude);
 
             } while(mDataCursor.moveToNext());
         }
@@ -125,7 +125,7 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
 
     private void refreshSearchHistoryList()
     {
-        //Log.v(TAG, "refreshSearchHistoryList()");
+        //Log.d(TAG, "refreshSearchHistoryList()");
         if (!mDatabaseAdapter.isDatabaseOpen())
         {
             mDatabaseAdapter.open();
@@ -146,7 +146,7 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
 
     private void shareViaEmail(String aDescription, String aLocationString)
     {
-        Log.v("Don", "shareViaEmail(): " + aLocationString);
+        Log.d("Don", "shareViaEmail(): " + aLocationString);
         Intent  emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, aDescription);
@@ -157,7 +157,7 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
 
     private void shareViaSMS(String aLocationString)
     {
-        Log.v("Don", "shareViaSMS(): " + aLocationString);
+        Log.d("Don", "shareViaSMS(): " + aLocationString);
         try
         {
             Intent intent;

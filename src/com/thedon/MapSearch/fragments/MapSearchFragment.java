@@ -136,7 +136,7 @@ public class MapSearchFragment extends Fragment
             String addressSearchString = mAddressEditText.getText().toString();
             String descriptionString = mDescriptionEditText.getText().toString();
 
-            Log.v("Don", "Address: " + addressSearchString + " - latitude: " + mLatLng.latitude + " - longitude: " + mLatLng.longitude );
+            Log.d("Don", "Address: " + addressSearchString + " - latitude: " + mLatLng.latitude + " - longitude: " + mLatLng.longitude );
 
             mDatabaseAdapter.addSearchHistory(addressSearchString, descriptionString, String.valueOf(mLatLng.latitude), String.valueOf(mLatLng.longitude));
         }
