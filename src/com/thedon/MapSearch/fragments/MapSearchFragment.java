@@ -130,7 +130,7 @@ public class MapSearchFragment extends Fragment
                 // Locate the first location
                 if(i == 0)
                 {
-                    mGoogleMap.animateCamera(CameraUpdateFactory.newLatLng(mLatLng));
+                    mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(mLatLng, 15));
                 }
             }
         }
