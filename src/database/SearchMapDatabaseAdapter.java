@@ -114,7 +114,7 @@ public final class SearchMapDatabaseAdapter
 
     public long addSearchHistory(String aSearchString, String aDescription, String aLatitude, String aLongitude)
     {
-        Log.d("Don", "addSearchHistory(" + aSearchString + ", " + aDescription + ")");
+        Log.d(TAG, "addSearchHistory(" + aSearchString + ", " + aDescription + ")");
         final ContentValues initialValues = new ContentValues();
 
         initialValues.put(Schema.SearchHistory.SEARCH_STRING, aSearchString);

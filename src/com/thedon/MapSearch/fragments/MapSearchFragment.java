@@ -33,6 +33,8 @@ import java.util.List;
  */
 public class MapSearchFragment extends Fragment
 {
+    private static final String TAG = MapSearchFragment.class.getSimpleName();
+
     private FragmentActivity mActivity;
     private Button mSearchButton;
     private EditText mAddressEditText;
@@ -148,7 +150,7 @@ public class MapSearchFragment extends Fragment
             String addressSearchString = mAddressEditText.getText().toString();
             String descriptionString = mDescriptionEditText.getText().toString();
 
-            Log.d("Don", "Address: " + addressSearchString + " - latitude: " + mLatLng.latitude + " - longitude: " + mLatLng.longitude );
+            Log.d(TAG, "Address: " + addressSearchString + " - latitude: " + mLatLng.latitude + " - longitude: " + mLatLng.longitude );
 
             mDatabaseAdapter.addSearchHistory(addressSearchString, descriptionString, String.valueOf(mLatLng.latitude), String.valueOf(mLatLng.longitude));
         }
