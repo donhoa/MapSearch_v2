@@ -13,7 +13,11 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eecc66a-e842-4311-bb47-34e54c054e28" name="Default" comment="" />
+    <list default="true" id="2eecc66a-e842-4311-bb47-34e54c054e28" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MapSearch.iml" afterPath="$PROJECT_DIR$/MapSearch.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MapSearch.ipr" afterPath="$PROJECT_DIR$/MapSearch.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MapSearch.iws" afterPath="$PROJECT_DIR$/MapSearch.iws" />
+    </list>
     <ignored path="MapSearch.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,40 +80,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MapSearchActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/MapSearchActivity.java">
+      <file leaf-file-name="LayoutInflater.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-14/android.jar!/android/view/LayoutInflater.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="55" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2159">
-              <folding>
-                <element signature="e#1150#1172#0" expanded="true" />
-                <element signature="e#2960#3254#0" expanded="true" />
-                <element signature="e#3243#3244#0" expanded="true" />
-                <element signature="e#3587#3601#0" expanded="true" />
-                <element signature="e#3603#3617#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_menu.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/menu/main_menu.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="51" selection-start="183" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+            <state line="33" column="29" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map_search_fragment.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/map_search_fragment.xml">
+      <file leaf-file-name="search_history_fragment.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/search_history_fragment.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="69" selection-start="1486" selection-end="1486" vertical-scroll-proportion="-15.259259" vertical-offset="217" max-vertical-offset="765">
-              <folding>
-                <element signature="e#393#418#0" expanded="true" />
-                <element signature="e#463#484#0" expanded="true" />
-                <element signature="e#676#701#0" expanded="true" />
-                <element signature="e#1136#1162#0" expanded="true" />
-              </folding>
+            <state line="16" column="10" selection-start="570" selection-end="570" vertical-scroll-proportion="-10.074074" vertical-offset="0" max-vertical-offset="510">
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -117,63 +101,86 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="Activity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="107" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <folding>
-                <element signature="e#634#652#0" expanded="true" />
-                <element signature="e#800#818#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapSearchFragment.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/MapSearchFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="82" selection-start="4111" selection-end="4111" vertical-scroll-proportion="0.7336956" vertical-offset="1822" max-vertical-offset="2431">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1890#2215#0" expanded="true" />
-                <element signature="e#2204#2205#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Address.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-14/android.jar!/android/location/Address.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1717">
+            <state line="4529" column="18" selection-start="192092" selection-end="192092" vertical-scroll-proportion="0.0" vertical-offset="74888" max-vertical-offset="90780">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FragmentManager.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/android/support/v4/app/FragmentManager.class">
+      <file leaf-file-name="navigation_drawer_list_item.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/navigation_drawer_list_item.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="52" selection-start="658" selection-end="658" vertical-scroll-proportion="-7.36" vertical-offset="156" max-vertical-offset="1343">
+            <state line="17" column="22" selection-start="624" selection-end="624" vertical-scroll-proportion="-10.703704" vertical-offset="0" max-vertical-offset="561">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="-3.7777777" vertical-offset="0" max-vertical-offset="527">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LatLng.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/maps/model/LatLng.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="24" selection-start="398" selection-end="398" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HistoryFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Geocoder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/location/Geocoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="168" column="25" selection-start="6760" selection-end="6760" vertical-scroll-proportion="0.0" vertical-offset="2264" max-vertical-offset="4114">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoryFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/HistoryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+            <state line="61" column="28" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.47644928" vertical-offset="774" max-vertical-offset="3417">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3131#3150#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigationDrawerItem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/NavigationDrawerItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="46" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <file leaf-file-name="SearchHistoryItem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/SearchHistoryItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="75" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <folding />
+            <state line="18" column="54" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="748">
+              <folding>
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,21 +192,34 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/NavigationDrawerItem.java" />
-        <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/HistoryFragment.java" />
         <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/adapters/NavigationDrawerAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/navigation_drawer_list_item.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/menu/main_menu.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/MapSearchActivity.java" />
         <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/MapOverlayItem.java" />
-        <option value="$PROJECT_DIR$/res/layout/map_search_fragment.xml" />
+        <option value="$PROJECT_DIR$/res/layout/serach_history_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/database/Schema.java" />
+        <option value="$PROJECT_DIR$/res/layout/search_history_list_item.xml" />
+        <option value="$PROJECT_DIR$/src/database/Schema.java" />
+        <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/SearchHistoryItem.java" />
+        <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/adapters/SearchHistoryListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/database/SearchMapDatabaseAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/search_history_fragment.xml" />
+        <option value="$PROJECT_DIR$/res/values-fr/strings.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/MapSearchFragment.java" />
+        <option value="$PROJECT_DIR$/res/layout/map_search_fragment.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/HistoryFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/thedon/MapSearch/MapSearchActivity.java" />
       </list>
     </option>
   </component>
@@ -209,7 +229,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -247,186 +267,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="MapSearch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 4.0 Platform &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 4.0 Platform &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 4.0 Platform &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 4.0 Platform &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widget" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 4.0 Platform &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="location" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-play-services.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-play-services.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-play-services.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-play-services.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -533,7 +373,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
+              <option name="myItemId" value="values-fr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,7 +391,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -605,92 +445,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-support-v4.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-support-v4.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-support-v4.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapSearch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -713,8 +467,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Sources\MapSearch\res\menu" />
+      <recent name="C:\Sources\MapSearch\res\values-fr" />
       <recent name="C:\Sources\MapSearch\res\layout" />
+      <recent name="C:\Sources\MapSearch\res\menu" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.MapSearch">
@@ -875,6 +630,28 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2eecc66a-e842-4311-bb47-34e54c054e28" name="Default" comment="" />
@@ -887,32 +664,32 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3303671" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.43377483" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988889" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3303671" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.56456953" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -937,16 +714,135 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/res/layout/search_history_list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="67" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/Schema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+        <state line="19" column="54" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/NavigationDrawerItem.java">
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="69" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+        <state line="6" column="43" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/adapters/NavigationDrawerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="71" selection-start="855" selection-end="855" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-fr/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="43" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/HistoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="94" selection-start="1958" selection-end="1958" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="3383">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3131#3150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/adapters/SearchHistoryListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="61" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/MapSearchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="55" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/map_search_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="69" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="47" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="731">
+          <folding>
+            <element signature="e#1152#1191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/SearchMapDatabaseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="19" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/MapSearchFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="103" selection-start="2370" selection-end="2370" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2567">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-14/android.jar!/android/location/Address.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1734" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/android/support/v4/app/FragmentManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="52" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/HistoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="306">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3131#3150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="75" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="493">
           <folding />
         </state>
       </provider>
@@ -958,155 +854,231 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/android/support/v4/app/ActionBarDrawerToggle.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="11" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.34278667" vertical-offset="79" max-vertical-offset="1853">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/adapters/NavigationDrawerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="94" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/navigation_drawer_list_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="180" selection-start="948" selection-end="948" vertical-scroll-proportion="-13.851851" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="68" selection-start="861" selection-end="861" vertical-scroll-proportion="-12.592592" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/main_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="51" selection-start="183" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="75" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding />
-        </state>
+        <state line="22" column="11" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.34278667" vertical-offset="79" max-vertical-offset="1853" />
       </provider>
     </entry>
     <entry file="file://C:/Program Files (x86)/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/res/values/version.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="70" selection-end="70" vertical-scroll-proportion="0.061594203" vertical-offset="0" max-vertical-offset="552">
-          <folding />
-        </state>
+        <state line="2" column="19" selection-start="70" selection-end="70" vertical-scroll-proportion="0.061594203" vertical-offset="0" max-vertical-offset="552" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-14/android.jar!/android/widget/EditText.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="716" selection-end="716" vertical-scroll-proportion="0.41485506" vertical-offset="43" max-vertical-offset="595">
-          <folding />
-        </state>
+        <state line="17" column="33" selection-start="716" selection-end="716" vertical-scroll-proportion="0.41485506" vertical-offset="43" max-vertical-offset="595" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/android/support/v4/app/FragmentManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="52" selection-start="658" selection-end="658" vertical-scroll-proportion="-7.36" vertical-offset="156" max-vertical-offset="1343">
-          <folding />
-        </state>
+        <state line="21" column="52" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1360" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/maps/MapFragment.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.16129032" vertical-offset="0" max-vertical-offset="1581">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.16129032" vertical-offset="0" max-vertical-offset="1581" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/maps/SupportMapFragment.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.16129032" vertical-offset="0" max-vertical-offset="1581">
+        <state line="6" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.16129032" vertical-offset="0" max-vertical-offset="1581" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-14/android.jar!/android/location/Address.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1717" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/android/support/v4/widget/SimpleCursorAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="145" selection-start="937" selection-end="937" vertical-scroll-proportion="0.3329283" vertical-offset="49" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-14/android.jar!/android/view/LayoutInflater.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="29" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/SearchMapDatabaseAdapter.java">
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-14/android.jar!/android/database/Cursor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="391" selection-end="391" vertical-scroll-proportion="-1.3550725" vertical-offset="816" max-vertical-offset="2499">
+        <state line="6" column="17" selection-start="163" selection-end="163" vertical-scroll-proportion="-0.123188406" vertical-offset="153" max-vertical-offset="1615" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-16/android.jar!/android/os/Build.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="24" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.33333334" vertical-offset="428" max-vertical-offset="1309" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/location/Geocoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="25" selection-start="6760" selection-end="6760" vertical-scroll-proportion="0.0" vertical-offset="2264" max-vertical-offset="4114">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/maps/model/LatLng.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="398" selection-end="398" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4529" column="18" selection-start="192092" selection-end="192092" vertical-scroll-proportion="0.0" vertical-offset="74888" max-vertical-offset="90780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="-3.7777777" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/map_search_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="27" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-8.740741" vertical-offset="257" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/navigation_drawer_list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="22" selection-start="624" selection-end="624" vertical-scroll-proportion="-10.703704" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/search_history_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="570" selection-end="570" vertical-scroll-proportion="-10.074074" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/search_history_list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="59" selection-start="930" selection-end="930" vertical-scroll-proportion="0.22666667" vertical-offset="255" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="17" selection-start="648" selection-end="648" vertical-scroll-proportion="0.49275362" vertical-offset="0" max-vertical-offset="552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-fr/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="77" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.6467391" vertical-offset="0" max-vertical-offset="552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="46" selection-start="306" selection-end="306" vertical-scroll-proportion="0.49275362" vertical-offset="0" max-vertical-offset="552">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="107" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+        <state line="30" column="59" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.92391306" vertical-offset="0" max-vertical-offset="731">
           <folding>
-            <element signature="e#634#652#0" expanded="true" />
-            <element signature="e#800#818#0" expanded="true" />
+            <element signature="e#1152#1191#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/HistoryFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/database/SearchMapDatabaseAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+        <state line="28" column="80" selection-start="880" selection-end="880" vertical-scroll-proportion="0.615942" vertical-offset="0" max-vertical-offset="2533">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/map_search_fragment.xml">
+    <entry file="file://$PROJECT_DIR$/src/database/Schema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="69" selection-start="1486" selection-end="1486" vertical-scroll-proportion="-15.259259" vertical-offset="217" max-vertical-offset="765">
+        <state line="19" column="54" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/SearchHistoryItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="54" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="748">
           <folding>
-            <element signature="e#393#418#0" expanded="true" />
-            <element signature="e#463#484#0" expanded="true" />
-            <element signature="e#676#701#0" expanded="true" />
-            <element signature="e#1136#1162#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/NavigationDrawerItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="46" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/MapSearchActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="55" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2159">
+        <state line="2" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.061594203" vertical-offset="0" max-vertical-offset="2295">
           <folding>
-            <element signature="e#1150#1172#0" expanded="true" />
-            <element signature="e#2960#3254#0" expanded="true" />
-            <element signature="e#3243#3244#0" expanded="true" />
-            <element signature="e#3587#3601#0" expanded="true" />
-            <element signature="e#3603#3617#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-14/android.jar!/android/location/Address.class">
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/adapters/SearchHistoryListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1717">
+        <state line="84" column="55" selection-start="2617" selection-end="2617" vertical-scroll-proportion="0.045289855" vertical-offset="1233" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/adapters/NavigationDrawerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="73" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.5072464" vertical-offset="468" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/MapSearchFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="82" selection-start="4111" selection-end="4111" vertical-scroll-proportion="0.7336956" vertical-offset="1822" max-vertical-offset="2431">
+        <state line="34" column="13" selection-start="1039" selection-end="1039" vertical-scroll-proportion="-0.4057971" vertical-offset="802" max-vertical-offset="2822">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1890#2215#0" expanded="true" />
-            <element signature="e#2204#2205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thedon/MapSearch/fragments/HistoryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="28" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.47644928" vertical-offset="774" max-vertical-offset="3417">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3131#3150#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1151,7 +1123,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>Android 4.4.2 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
