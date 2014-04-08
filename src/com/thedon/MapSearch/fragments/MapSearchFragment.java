@@ -111,7 +111,7 @@ public class MapSearchFragment extends Fragment
             }
 
             // Clears all the existing markers on the map
-            //mGoogleMap.clear();
+            mGoogleMap.clear();
 
             for(int i = 0; i<addresses.size(); i++)
             {
@@ -124,10 +124,11 @@ public class MapSearchFragment extends Fragment
                 markerOptions = new MarkerOptions();
                 markerOptions.position(mLatLng);
                 markerOptions.title(addressText);
+                markerOptions.snippet(mDescriptionEditText.getText().toString());
 
                 mGoogleMap.addMarker(markerOptions);
 
-                // Locate the first location
+                //Show the first location
                 if(i == 0)
                 {
                     mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(mLatLng, 15));
