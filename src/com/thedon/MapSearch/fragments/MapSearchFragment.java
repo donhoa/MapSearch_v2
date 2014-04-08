@@ -1,5 +1,6 @@
 package com.thedon.MapSearch.fragments;
 
+import android.app.ActionBar;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.AsyncTask;
@@ -48,6 +49,10 @@ public class MapSearchFragment extends Fragment
         super.onCreate(savedInstanceState);
 
         mActivity = getActivity();
+
+        final ActionBar actionBar = mActivity.getActionBar();
+        actionBar.setTitle(getResources().getString(R.string.app_name));
+
         mDatabaseAdapter = new SearchMapDatabaseAdapter(mActivity);
         mDatabaseAdapter.open();
     }
