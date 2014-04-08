@@ -6,7 +6,9 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Telephony;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -158,10 +160,26 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
         Log.v("Don", "shareViaSMS(): " + aLocationString);
         try
         {
-            Uri smsUri = Uri.parse("smsto:");
-            Intent smsIntent = new Intent(Intent.ACTION_SENDTO, smsUri);
-            smsIntent.putExtra("sms_body", aLocationString);
-            startActivity(smsIntent);
+            Intent intent;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) // Android 4.4 and up
+            {
+                String defaultSmsPackageName = Telephony.Sms.getDefaultSmsPackage(mActivity);
+                intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_TEXT, aLocationString);
+
+                if (defaultSmsPackageName != null) // Can be null in case that there is no default, then the user would be able to choose any app that supports this intent.
+                {
+                    intent.setPackage(defaultSmsPackageName);
+                }
+            }
+            else
+            {
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setType("vnd.android-dir/mms-sms");
+                intent.putExtra("sms_body", aLocationString);
+            }
+            mActivity.startActivity(intent);
         }
         catch (ActivityNotFoundException e)
         {
