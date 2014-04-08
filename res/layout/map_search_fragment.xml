@@ -20,7 +20,8 @@
             android:hint = "@string/descriptionHint"
             android:layout_height = "wrap_content"
             android:layout_width = "fill_parent"
-            android:id = "@+id/descriptionTextBox"/>
+            android:id = "@+id/descriptionTextBox"
+            android:maxLength="50"/>
 
     <Button
             android:id="@+id/searchButton"
