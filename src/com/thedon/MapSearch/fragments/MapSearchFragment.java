@@ -70,11 +70,8 @@ public class MapSearchFragment extends Fragment
             @Override
             public void onClick(View view)
             {
-                String addressSearchString, descriptionString;
+                String addressSearchString;
                 addressSearchString = mAddressEditText.getText().toString();
-                descriptionString = mDescriptionEditText.getText().toString();
-
-                mDatabaseAdapter.addSearchHistory(addressSearchString, descriptionString);
 
                 new GeocoderTask().execute(addressSearchString);
             }
@@ -134,6 +131,11 @@ public class MapSearchFragment extends Fragment
                     mGoogleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(mLatLng, 15));
                 }
             }
+
+            String addressSearchString = mAddressEditText.getText().toString();
+            String descriptionString = mDescriptionEditText.getText().toString();
+
+            mDatabaseAdapter.addSearchHistory(addressSearchString, descriptionString, String.valueOf(mLatLng.latitude), String.valueOf(mLatLng.longitude));
         }
     }
 }

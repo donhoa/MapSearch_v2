@@ -112,13 +112,15 @@ public final class SearchMapDatabaseAdapter
     }
 
 
-    public long addSearchHistory(String aSearchString, String aDescription)
+    public long addSearchHistory(String aSearchString, String aDescription, String aLatitude, String aLongitude)
     {
         Log.v("Don", "addSearchHistory(" + aSearchString + ", " + aDescription + ")");
         final ContentValues initialValues = new ContentValues();
 
         initialValues.put(Schema.SearchHistory.SEARCH_STRING, aSearchString);
         initialValues.put(Schema.SearchHistory.DESCRIPTION, aDescription);
+        initialValues.put(Schema.SearchHistory.LATITUDE, aLatitude);
+        initialValues.put(Schema.SearchHistory.LONGITUDE, aLongitude);
 
         final long retValue = mDb.insertOrThrow(Schema.SearchHistory.TABLE_NAME, null, initialValues);
 
