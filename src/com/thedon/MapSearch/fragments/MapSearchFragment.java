@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -134,6 +135,8 @@ public class MapSearchFragment extends Fragment
 
             String addressSearchString = mAddressEditText.getText().toString();
             String descriptionString = mDescriptionEditText.getText().toString();
+
+            Log.v("Don", "Address: " + addressSearchString + " - latitude: " + mLatLng.latitude + " - longitude: " + mLatLng.longitude );
 
             mDatabaseAdapter.addSearchHistory(addressSearchString, descriptionString, String.valueOf(mLatLng.latitude), String.valueOf(mLatLng.longitude));
         }
