@@ -128,6 +128,11 @@ public class MapSearchActivity extends FragmentActivity
         switch (aPosition)
         {
             case 0:
+                Fragment oldMapFrag = getSupportFragmentManager().findFragmentById(R.id.map);
+                if(oldMapFrag != null)
+                {
+                    getSupportFragmentManager().beginTransaction().remove(oldMapFrag).commit();
+                }
                 Fragment mapSearchFragment = new MapSearchFragment();
                 ft.replace(R.id.navigation_drawer_frame, mapSearchFragment).commit();
                 break;
