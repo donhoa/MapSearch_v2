@@ -10,12 +10,16 @@ public class SearchHistoryItem
     private long mId;
     private String mAddress;
     private String mDescription;
+    private String mLatitude;
+    private String mLongitude;
 
-    public SearchHistoryItem(long aId, String aAddress, String aDescription)
+    public SearchHistoryItem(long aId, String aAddress, String aDescription, String aLatitude, String aLongitude)
     {
         mId = aId;
         mAddress = aAddress;
         mDescription = aDescription;
+        mLatitude = aLatitude;
+        mLongitude = aLongitude;
     }
 
     public long getId()
@@ -31,6 +35,16 @@ public class SearchHistoryItem
     public String getDescription()
     {
         return mDescription;
+    }
+
+    public String getLatitude()
+    {
+        return mLatitude;
+    }
+
+    public String getLongitude()
+    {
+        return mLongitude;
     }
 }
 

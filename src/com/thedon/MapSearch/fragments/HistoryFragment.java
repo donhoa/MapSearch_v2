@@ -86,9 +86,11 @@ public class HistoryFragment extends Fragment implements SearchHistoryListAdapte
                 long id = mDataCursor.getLong(mDataCursor.getColumnIndex(Schema.SearchHistory.AUTO_ID_PK));
                 String searchString = mDataCursor.getString(mDataCursor.getColumnIndex(Schema.SearchHistory.SEARCH_STRING));
                 String description = mDataCursor.getString(mDataCursor.getColumnIndex(Schema.SearchHistory.DESCRIPTION));
-                list.add(new SearchHistoryItem(id, searchString, description));
+                String latitude = mDataCursor.getString(mDataCursor.getColumnIndex(Schema.SearchHistory.LATITUDE));
+                String longitude = mDataCursor.getString(mDataCursor.getColumnIndex(Schema.SearchHistory.LONGITUDE));
+                list.add(new SearchHistoryItem(id, searchString, description, latitude, longitude));
 
-                Log.v("Don", "ID: " + id + " - SEARCH STRING: " + searchString + " - " + description);
+                Log.v("Don", "ID: " + id + " - SEARCH STRING: " + searchString + " - " + description + " - " + latitude + " - " + longitude);
 
             } while(mDataCursor.moveToNext());
         }
