@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MapSearch</string>
+
+    <!-- Navigation Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Recherche</item>
+        <item >Historique</item>
+    </string-array>
+
+    <string name="searchPageTitle">Entrez une location à rechercher:</string>
+    <string name="addressHint">Entrer localisation</string>
+    <string name="descriptionHint">Entrer description</string>
+    <string name="searchButtonText">Recherche</string>
+    <string name="viewSearchHistory">Visualiser historique</string>
+    <string name="searchHistoryTitle">Historique de recherche</string>
+    <string name="deleteSearchHistory">Supprimer</string>
+    <string name="shareViaEmail">Envoi par email</string>
+    <string name="shareViaSMS">Envoi par SMS</string>
+    <string name="emptyFieldsToast">Veuilez entrer une localisation</string>
+    <string name="about">À propos</string>
+    <string name="menu_item_settings">Paramètres</string>
+    <string name="no_sms_app">Aucune application trouvée pour envoyer le SMS</string>
+    <string name="empty_list">--- Vide ---</string>
+</resources>
